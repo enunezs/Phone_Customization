@@ -52,6 +52,16 @@ And the music player, in order
 - $mi(artist)$ -
 ```
 
+And the wallpaper! Solid color changing through the day, depending on the current hour. 
+
+```
+$cm(
+(mu(sin, df(hh)*15-120)+1)*255/2,
+(mu(sin, df(hh)*15 )+1)*255*.85/2,
+(mu(sin, df(hh)*15 +120)+1)*255/2
+)$
+```
+
 ## Result
 
 Current configuration
